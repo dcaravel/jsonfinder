@@ -1,0 +1,35 @@
+{
+    "A": {
+        "label": "Label for A",
+        "things": [
+            "one two three",
+            "two three four",
+            "three four five"
+        ]
+    },
+    "B": {
+        "label": "Label for D",
+        "things": [
+            "hello",
+            "world"
+        ]
+    },
+    "C": {
+        "label": "Label for C",
+        "things": [
+            "four",
+            "five",
+            "six"
+        ],
+        "bonus": [
+            {
+                "name": "dave",
+                "favorite": "seven"
+            },
+            {
+                "name": "fred",
+                "favorite": "four"
+            }
+        ]
+    }
+}
