@@ -102,8 +102,11 @@ $ jsonfinder -f example.json --indexes --context "A label, C label, C bonus name
 
 ## TODO
 
-- Change 'context' to use jsonpath instead
+- Refactor to make less ick
+- Change 'context' to use jsonpath
 - Allow regex in search term
-- Change how breadcrumbs are tracked so that the output logic is as messy trying to interpret the before and after elements.
-- Allow the field name for 'addindexes" to be customized
+- Allow jsonpath in search term
+- Change how breadcrumbs are tracked so that the output logic is not as messy when interpreting before and after elements.
+- Allow the field name for 'addindexes" to be customized (current "_oindex" for "original index")
 - Add support for searching bool and float fields, also ensure that these same field types can be included as context
+- Add tests now that poc is truthful, ensure covers all scenarios (such as arrays withing arrays within arrays)
