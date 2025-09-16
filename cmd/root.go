@@ -5,6 +5,7 @@ package cmd
 
 import (
 	stdJSON "encoding/json"
+	"errors"
 	"fmt"
 	"os"
 	"strings"
@@ -101,7 +102,7 @@ func loadConfig() (*config.Config, error) {
 	c, err := loadConfigFromFile(path)
 	if err == nil {
 		return c, nil
-	} else if !os.IsNotExist(err) {
+	} else if !errors.Is(err, os.ErrNotExist) {
 		// There was an error, and the error is NOT not found
 		return nil, fmt.Errorf("loading local config %q: %w", path, err)
 	}
